@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Windows\\System32\\BitirmeP\\API\\API.csproj": {}
+    "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Windows\\System32\\BitirmeP\\API\\API.csproj": {
+    "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Windows\\System32\\BitirmeP\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Windows\\System32\\BitirmeP\\API\\API.csproj",
+        "projectPath": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\API.csproj",
         "packagesPath": "C:\\Users\\hamza\\.nuget\\packages\\",
-        "outputPath": "C:\\Windows\\System32\\BitirmeP\\API\\obj\\",
+        "outputPath": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hamza\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +41,24 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
               "target": "Package",
               "version": "[7.0.12, )"
             },
