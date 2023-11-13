@@ -88,7 +88,6 @@ C:\Users\hamza\Desktop\BitirmeP\e-commerce-store\API\bin\Debug\net7.0\runtimes\l
 C:\Users\hamza\Desktop\BitirmeP\e-commerce-store\API\bin\Debug\net7.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
 C:\Users\hamza\Desktop\BitirmeP\e-commerce-store\API\bin\Debug\net7.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
 C:\Users\hamza\Desktop\BitirmeP\e-commerce-store\API\bin\Debug\net7.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
-C:\Users\hamza\Desktop\BitirmeP\e-commerce-store\API\bin\Debug\net7.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
 C:\Users\hamza\Desktop\BitirmeP\e-commerce-store\API\bin\Debug\net7.0\runtimes\linux-s390x\native\libe_sqlite3.so
 C:\Users\hamza\Desktop\BitirmeP\e-commerce-store\API\bin\Debug\net7.0\runtimes\linux-x64\native\libe_sqlite3.so
 C:\Users\hamza\Desktop\BitirmeP\e-commerce-store\API\bin\Debug\net7.0\runtimes\linux-x86\native\libe_sqlite3.so
@@ -100,3 +99,4 @@ C:\Users\hamza\Desktop\BitirmeP\e-commerce-store\API\bin\Debug\net7.0\runtimes\w
 C:\Users\hamza\Desktop\BitirmeP\e-commerce-store\API\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\hamza\Desktop\BitirmeP\e-commerce-store\API\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\hamza\Desktop\BitirmeP\e-commerce-store\API\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\hamza\Desktop\BitirmeP\e-commerce-store\API\bin\Debug\net7.0\runtimes\linux-ppc64le\native\libe_sqlite3.so

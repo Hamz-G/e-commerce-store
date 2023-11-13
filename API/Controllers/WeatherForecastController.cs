@@ -1,3 +1,5 @@
+#nullable enable
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;

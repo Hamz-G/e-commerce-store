@@ -1717,10 +1717,8 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.AspNetCore.OpenApi >= 7.0.12",
-      "Microsoft.EntityFrameworkCore >= 7.0.12",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.12",
       "Microsoft.EntityFrameworkCore.Sqlite >= 7.0.12",
-      "Microsoft.EntityFrameworkCore.Sqlite.Core >= 7.0.12",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -1767,10 +1765,6 @@
             "target": "Package",
             "version": "[7.0.12, )"
           },
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[7.0.12, )"
-          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
@@ -1778,10 +1772,6 @@
             "version": "[7.0.12, )"
           },
           "Microsoft.EntityFrameworkCore.Sqlite": {
-            "target": "Package",
-            "version": "[7.0.12, )"
-          },
-          "Microsoft.EntityFrameworkCore.Sqlite.Core": {
             "target": "Package",
             "version": "[7.0.12, )"
           },
@@ -1809,7 +1799,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
