@@ -19,21 +19,6 @@ namespace API.Controllers
             this.context = context;
             
         }
-
-        [HttpGet] 
-        public ActionResult<List<Product>> GetProducts()
-        {
-            var products = context.Products.ToList();
-
-            return Ok(products);
-
-     
-        }
-        [HttpGet("{id}")] 
-        public ActionResult<Product>  GetProduct(int id)
-        {   
-            return context.Products.Find(id);
-        }
     }
 
 }
