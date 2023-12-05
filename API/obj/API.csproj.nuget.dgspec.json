@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\api\\API.csproj": {}
+    "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\api\\API.csproj": {
+    "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\api\\API.csproj",
+        "projectPath": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\API.csproj",
         "packagesPath": "C:\\Users\\hamza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\api\\obj\\",
+        "outputPath": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hamza\\AppData\\Roaming\\NuGet\\NuGet.Config",

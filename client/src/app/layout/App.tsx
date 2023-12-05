@@ -1,41 +1,33 @@
-import { useEffect, useState } from "react";
-import { Product } from "../models/product";
-
+import { Container, createTheme, CssBaseline, ThemeProvider } from "@mui/material";
+import { useState } from "react";
+import Catalog from "../../features/Catalog/Catalog";
+import Header from "./Header";
 
 function App() {
-const [products, setProducts] = useState<Product[]>([]);
+  const [darkMode, setDarkMode] = useState(false);
+  const palleteType = darkMode ? 'dark' : 'light';
+  const theme = createTheme({
+    palette: {
+      mode: palleteType,
+      background: {
+        default: (palleteType === 'light') ? '#eaeaea' : '#121212'
+      }
+    }
+  })
 
-useEffect(() => {
-  fetch('http://localhost:5000/api/products')
-  .then(Response => Response.json())
-  .then(data => setProducts(data))
-}, [])
+  function handleThemeChange() {
+    setDarkMode(!darkMode);
+  }
 
-function addProduct() {
-  setProducts (prevState =>  [ ...prevState,
-    {
-      id:prevState.length + 101, 
-      name:'product' + (prevState.length + 1), 
-      price: (prevState.length * 100) + 100,
-      brand: 'some brand',
-      description : ' some description',
-      pictureUrl: 'https://picsum.photos/200',
-      
-    }])
-}
-  
-
-return (  
-    <div>
-      <h1> E-Ticaret-Sitesi</h1>
-      <ul>
-        {products.map((product )=>(
-          <li key= {product.id}>{product.name} - {product.price}</li>
-         ))}
-      </ul>
-      <button onClick={addProduct}>Ürün Ekle</button>
-    </div>
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Header darkMode={darkMode} handleThemeChange={handleThemeChange}  />
+      <Container>
+        <Catalog />
+      </Container>
+    </ThemeProvider>
   );
 }
 
-export default App
+export default App;

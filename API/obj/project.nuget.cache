@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cyiM0j2DdUEoFFZHc8frky0DK+mw+onYRnXUCE20EApn7Sme4zRGXgbw3jCE4yUTwvqrc2+AGSykaLTq3qQDHQ==",
+  "dgSpecHash": "s45d+SAL0RP3pDmGpr6pLGf2sER0FvOhuXj85LT4c51MIBv5dBWNUkfN/WYHLEqVbFbBa4hhGDs9AVTXgWb7Qw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\api\\API.csproj",
+  "projectFilePath": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hamza\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\hamza\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.12\\microsoft.aspnetcore.openapi.7.0.12.nupkg.sha512",
