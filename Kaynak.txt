@@ -1,1 +1,6 @@
 https://mui.com/material-ui/getting-started/installation/
+https://reactrouter.com/en/main
+https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-8.0
+https://www.npmjs.com/package/react-toastify
+https://mui.com/material-ui/react-progress/
+https://mui.com/material-ui/about-the-lab/#installation
