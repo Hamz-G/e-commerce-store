@@ -1,10 +1,33 @@
 import { Container, createTheme, CssBaseline, ThemeProvider } from "@mui/material";
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Header from "./Header";
 import { Outlet } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import LoadingComponent from "./LoadingComponent";
+import { useAppDispatch } from "../store/configureStore";
+import { fetchBasketAsync } from "../../features/Basket/basketSlice";
+import { fetchCurrentUser } from "../../features/account/accountSlice";
+
+
+
 function App() {
+  const dispatch = useAppDispatch();
+  const [loading, setLoading] = useState(true);
+
+  const initApp = useCallback(async () => {
+    try {
+      await dispatch(fetchCurrentUser());
+      await dispatch(fetchBasketAsync());
+    } catch (error) {
+      console.log(error);
+    }
+  }, [dispatch]);
+
+  useEffect(()=> {
+      initApp().then(() => setLoading(false));
+  }, [initApp])
+
   const [darkMode, setDarkMode] = useState(false);
   const palleteType = darkMode ? 'dark' : 'light';
   const theme = createTheme({
@@ -19,6 +42,8 @@ function App() {
   function handleThemeChange() {
     setDarkMode(!darkMode);
   }
+
+  if (loading) return <LoadingComponent message ="Uygulama başlatılıyor." />
 
   return (
     <ThemeProvider theme={theme}>

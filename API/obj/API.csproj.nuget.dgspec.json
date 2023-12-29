@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\API.csproj": {}
+    "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\API.csproj": {
+    "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\API.csproj",
+        "projectPath": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\api\\API.csproj",
         "packagesPath": "C:\\Users\\hamza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\obj\\",
+        "outputPath": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hamza\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.12, )"

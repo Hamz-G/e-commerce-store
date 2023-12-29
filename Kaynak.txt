@@ -4,3 +4,10 @@ https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspn
 https://www.npmjs.com/package/react-toastify
 https://mui.com/material-ui/react-progress/
 https://mui.com/material-ui/about-the-lab/#installation
+https://mui.com/material-ui/react-table/
+https://redux.js.org/introduction/getting-started
+https://react-hook-form.com/
+
+JWT NEDİR (JSON Web Token)
+nugget gallery
+sqlite
