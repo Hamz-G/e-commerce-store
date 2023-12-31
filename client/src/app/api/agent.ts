@@ -1,9 +1,9 @@
 
-import axios, {AxiosError, AxiosResponse } from "axios";
-import { toast } from "react-toastify";
-import { router } from "../router/Routes";
-import { PaginatedResponse } from "../models/pagination";
-import { store } from "../store/configureStore";
+import axios, { AxiosError, AxiosResponse } from "axios";
+import { toast } from 'react-toastify';
+import { router } from '../router/Routes';
+import { PaginatedResponse } from '../models/pagination';
+import { store } from '../store/configureStore';
 
 const sleep = () => new Promise(resolve => setTimeout(resolve,400));
 
@@ -63,7 +63,7 @@ const requests = {
 const Catalog = {
     list: (params: URLSearchParams) => requests.get('products', params),
     details: (id: number) => requests.get(`products/${id}`),
-    fetchFilters: () => requests.get('products/filters')
+    fetchFilters: () => requests.get('products/filters')  
 }
 
 const TestErrors = {
@@ -85,7 +85,7 @@ const Account = {
     login: (values: any) => requests.post('account/login', values),
     register: (values: any) => requests.post('account/register', values),
     currentUser: () => requests.get('account/currentUser'),
-    fetchAddress: () => requests.get('account/savedAddress')
+    fetchAddress: () => requests.get('account/savedAddress') //Kayıtlı adresi getirir
 }
 
 const Orders = {
@@ -93,12 +93,19 @@ const Orders = {
     fetch: (id: number) => requests.get(`orders/${id}`),
     create: (values: any) => requests.post('orders', values)
 }
+
+const Payments = {
+    createPaymentIntent: () => requests.post('payments', {})
+}
+
+
 const agent = {
     Catalog,
     TestErrors,
     Basket,
     Account,
-    Orders
+    Orders,
+    Payments
 }
 
 export default agent;

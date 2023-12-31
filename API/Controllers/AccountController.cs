@@ -77,8 +77,8 @@ namespace API.Controllers
             Basket = userBasket?.MapBasketToDto()
         };
     }
-     [Authorize]
-    [HttpGet("savedAddress")]
+     [Authorize] 
+    [HttpGet("savedAddress")] //kullanıcının adresi kaydeder
     public async Task<ActionResult<UserAddress>> GetSavedAddress()
     {
         return await _userManager.Users
