@@ -13,7 +13,7 @@ import { LoadingButton } from '@mui/lab';
 import { StripeElementType } from '@stripe/stripe-js';
 import { CardNumberElement, useElements, useStripe } from '@stripe/react-stripe-js';
 
-const steps = ['Shipping address', 'Review your order', 'Payment details'];
+const steps = ['Gönderim adresi', 'Siparişinizi inceleyin', 'Ödeme Sayfası'];
 
 export default function CheckoutPage() {
     const [activeStep, setActiveStep] = useState(0);
@@ -87,12 +87,12 @@ export default function CheckoutPage() {
                 const orderNumber = await agent.Orders.create({ saveAddress, shippingAddress });
                 setOrderNumber(orderNumber);
                 setPaymentSucceeded(true);
-                setPaymentMessage('Thank you - we have received your payment');
+                setPaymentMessage('Teşekkürler ödemenizi aldık');
                 setActiveStep(activeStep + 1);
                 dispatch(clearBasket());
                 setLoading(false);
             } else {
-                setPaymentMessage(paymentResult.error?.message || 'Payment failed');
+                setPaymentMessage(paymentResult.error?.message || 'İşlem Başarısız');
                 setPaymentSucceeded(false);
                 setLoading(false);
                 setActiveStep(activeStep + 1);
@@ -148,13 +148,11 @@ export default function CheckoutPage() {
                             </Typography>
                             {paymentSucceeded ? (
                                 <Typography variant="subtitle1">
-                                    Your order number is #{orderNumber}. We have not emailed your order
-                                    confirmation, and will not send you an update when your order has
-                                    shipped as this is a fake store!
+                                   Sipariş numaranız #{orderNumber}
                                 </Typography>
                             ) : (
                                 <Button variant='contained' onClick={handleBack}>
-                                    Go back and try again
+                                    Tekrar deneyin
                                 </Button>
                             )}
                         </>
@@ -164,7 +162,7 @@ export default function CheckoutPage() {
                             <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                                 {activeStep !== 0 && (
                                     <Button onClick={handleBack} sx={{ mt: 3, ml: 1 }}>
-                                        Back
+                                        Geri
                                     </Button>
                                 )}
                                 <LoadingButton
@@ -174,7 +172,7 @@ export default function CheckoutPage() {
                                     variant="contained"
                                     sx={{ mt: 3, ml: 1 }}
                                 >
-                                    {activeStep === steps.length - 1 ? 'Place order' : 'Next'}
+                                    {activeStep === steps.length - 1 ? 'Sipariş ver' : 'İleri'}
                                 </LoadingButton>
                             </Box>
                         </form>
