@@ -9,8 +9,10 @@ https://redux.js.org/introduction/getting-started
 https://react-hook-form.com/
 https://dashboard.stripe.com/test/apikeys
 https://legacy.reactjs.org/docs/hooks-reference.html
+https://www.docker.com/products/docker-desktop/
 
-
+PostgreSQL
+FLy.io
 JWT NEDİR (JSON Web Token)
 nugget gallery
 sqlite

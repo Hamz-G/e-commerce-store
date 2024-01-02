@@ -12,7 +12,7 @@ import { fetchProductAsync, productSelectors } from "./catalogSlice";
 export default function ProductDetails() {
    const {basket} = useAppSelector(state => state.basket);
    const dispatch = useAppDispatch();
-   const {id} = useParams<{id: string}>();
+   const {id} = useParams<{id: undefined }>();
    const product = useAppSelector(state => productSelectors.selectById(state, id!));
    const {status: productStatus} = useAppSelector(state => state.catalog);
    const [quantity, setQuantity] = useState(0); 

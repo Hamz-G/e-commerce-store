@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cUfp/6q3d4PeZkXShpmOUvm29nseEIKWVNygJnkn6HgVyj/mrBiX06BRSONxx+nw1doVbTRBxZz34qYap1PXEg==",
+  "dgSpecHash": "FAhxURaVnOR2DYYAcSjvWOOr7WfO2on5m7rAIBf7kG2YIplN8CKG7vk6+D13Y3KCikdfiwiqxtvPDd4FAf84jg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\api\\API.csproj",
+  "projectFilePath": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hamza\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\hamza\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.12\\microsoft.aspnetcore.authentication.jwtbearer.7.0.12.nupkg.sha512",
@@ -41,6 +41,8 @@
     "C:\\Users\\hamza\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\hamza\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\hamza\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\hamza\\.nuget\\packages\\npgsql\\7.0.1\\npgsql.7.0.1.nupkg.sha512",
+    "C:\\Users\\hamza\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.1\\npgsql.entityframeworkcore.postgresql.7.0.1.nupkg.sha512",
     "C:\\Users\\hamza\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.4\\sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",
     "C:\\Users\\hamza\\.nuget\\packages\\sqlitepclraw.core\\2.1.4\\sqlitepclraw.core.2.1.4.nupkg.sha512",
     "C:\\Users\\hamza\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.4\\sqlitepclraw.lib.e_sqlite3.2.1.4.nupkg.sha512",

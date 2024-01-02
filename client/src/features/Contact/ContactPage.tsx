@@ -1,24 +1,64 @@
-import { Button, ButtonGroup, Typography } from "@mui/material";
-import { useAppDispatch, useAppSelector } from "../../app/store/configureStore";
-import { decrement, increment } from "./counterSlice";
+import React, { useState } from 'react';
 
-export default function ContactPage() {
-    const dispatch = useAppDispatch()
-    const {data,title} = useAppSelector(state => state.counter);
-    return (
-        <>
-        <Typography variant="h2">
-            {title}
-        </Typography>
-        <Typography variant="h5">
-            The data is : {data}
-        </Typography>
-        <ButtonGroup>
-                <Button onClick={() => dispatch(decrement(1))} variant='contained' color='error'>Azalt</Button>
-                <Button onClick={() => dispatch(increment(1))} variant='contained' color='secondary'>Arttır</Button>
-                <Button onClick={() => dispatch(increment(5))} variant='contained' color='primary'>5 Arttır</Button>
-            </ButtonGroup>
-        </>
+const ContactPage: React.FC = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
 
-    )
-}
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Burada formun gönderilmesiyle ilgili işlemleri gerçekleştirebilirsiniz
+    console.log('Form Verileri:', formData);
+    // İstediğiniz API'ye veya başka bir işleme gönderme işlemlerini ekleyebilirsiniz
+  };
+
+  return (
+    <div style={{ maxWidth: '400px', margin: 'auto' }}>
+      <h2 style={{ textAlign: 'center' }}>İletişim Formu</h2>
+      <form onSubmit={handleSubmit}>
+        <label style={{ display: 'block', margin: '10px 0' }}>
+          Adınız:
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            style={{ width: '100%', padding: '8px' }}
+            required
+          />
+        </label>
+        <label style={{ display: 'block', margin: '10px 0' }}>
+          E-posta:
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            style={{ width: '100%', padding: '8px' }}
+            required
+          />
+        </label>
+        <label style={{ display: 'block', margin: '10px 0' }}>
+          Mesajınız:
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            style={{ width: '100%', padding: '8px' }}
+            required
+          />
+        </label>
+        <button type="submit" style={{ width: '100%', padding: '10px', background: '#4CAF50', color: 'white', border: 'none' }}>Gönder</button>
+      </form>
+    </div>
+  );
+};
+
+export default ContactPage;

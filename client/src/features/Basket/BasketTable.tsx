@@ -19,7 +19,7 @@ export default function BasketTable({ items, isBasket = true }: Props) {
             <Table sx={{ minWidth: 650 }}>
                 <TableHead>
                     <TableRow>
-                        <TableCell>Product</TableCell>
+                        <TableCell>Ürün</TableCell>
                         <TableCell align="right">Fiyat</TableCell>
                         <TableCell align="center">Adet</TableCell>
                         <TableCell align="right">Ara Toplam</TableCell>

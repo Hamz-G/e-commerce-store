@@ -20,7 +20,7 @@ export default function CheckoutWrapper() {
             .finally(() => setLoading(false))
     }, [dispatch]);
 
-    if (loading) return <LoadingComponent message='Loading checkout' />
+    if (loading) return <LoadingComponent message='Ödeme Sayfasına Gidiliyor' />
 
     return (
         <Elements stripe={stripePromise}>

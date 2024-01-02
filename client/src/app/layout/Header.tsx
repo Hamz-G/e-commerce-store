@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useAppSelector } from "../store/configureStore";
 import SignedInMenu from "./SignedInMenu";
 
+
 const midLinks=[
     {title:'Ürünler', path:'/Ürünler'},
     {title:'Hakkımızda', path:'/Hakkımızda'},
@@ -47,7 +48,9 @@ export default function Header({handleThemeChange, darkMode}: Props) {
                 sx={navStyles}
 
                 >
-                E-Ticaret-Sitesi
+
+                BagStash
+
                 </Typography>
                 <Switch checked={darkMode} onChange={handleThemeChange} /*Karanlık mod*/ />
             </Box>

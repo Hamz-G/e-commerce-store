@@ -34,12 +34,12 @@ export default function SignedInMenu() {
         onClose={handleClose}
         TransitionComponent={Fade}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem component={Link} to='/orders' >My orders</MenuItem>
+        <MenuItem onClick={handleClose}>Profil</MenuItem>
+        <MenuItem component={Link} to='/orders' >Siparişler</MenuItem>
         <MenuItem onClick={() => {
           dispatch(signOut());
           dispatch(clearBasket());
-        }}>Logout</MenuItem>
+        }}>Çıkış</MenuItem>
       </Menu>
     </>
   );
