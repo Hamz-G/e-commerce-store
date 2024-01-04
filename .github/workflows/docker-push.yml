@@ -2,9 +2,10 @@ name: docker-push
 
 on:
   workflow_dispatch:
- #  push:
-   #  branches:
-  #     - 'main'
+  # push:
+     # branches:
+    #  - 'main'
+
 
 jobs:
   docker:
@@ -26,3 +27,5 @@ jobs:
           context: "{{defaultContext}}:API"
           push: true
           tags: civa41/e-commerce-store:latest
+
+   
