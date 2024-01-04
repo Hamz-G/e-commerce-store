@@ -69,6 +69,15 @@ export default function Header({handleThemeChange, darkMode}: Props) {
                         </ListItem>
 
                     ))}
+                    {user && user.roles?.includes('Admin') &&
+                     <ListItem
+                          component={NavLink}
+                          to={'/inventory'}
+                          sx={navStyles}      
+                        >   
+                           Inventory
+
+                        </ListItem>}
                 </List>
 
              <Box display='flex'alignItems='center'>   
