@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Zm0mGo6d1LcWIKY5pu3xq4vphc5mtWK26Kf83Ldq3Ag=",
+  "Hash": "tK184V2264IrY+oabJCfYg19Vr5B2vycDZSN3BZ+uSA=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\index-JjddhREJ.js"
+    },
+    {
+      "Identity": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\wwwroot\\assets\\index-oBLjwylL.js",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "assets/index-oBLjwylL.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\index-oBLjwylL.js"
     },
     {
       "Identity": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\wwwroot\\assets\\index-OzZyBF0X.css",
