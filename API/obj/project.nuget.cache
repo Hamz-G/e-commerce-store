@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H8HQlZVZxEwcr9u61ehQd/3Bs5rBe2uRf92nOBgPxDTgjFeMD3Oo1lZJa7f4OvOzinS274y7Ds+bH2YSKoAM2w==",
+  "dgSpecHash": "84xQAz+NrejrXOsiYR8i4C4TrCuLwl39DP/CxpP5FwHtex80isMWSx7psItUSCVZe9qgJJA7XjDqn9/VuN335Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\API.csproj",
+  "projectFilePath": "c:\\Users\\hamza\\Desktop\\BitirmeP\\e-commerce-store\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hamza\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\hamza\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
